@@ -19,6 +19,11 @@ const Buttons = styled.button`
 `;
 const Divbuttons = styled.div`
   width: 100%;
+
+  @media(max-width: 765px) {
+    width: auto;
+  }
+
 `;
 
 export {
