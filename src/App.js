@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Maintainer, Buttons, Input, Divbuttons } from "./StyleSheet"
 
 function App() {
   const [state, setState] = useState({
@@ -72,11 +73,10 @@ function App() {
     setCounter(0);
   }
   return (
-    <div className="maintainer">
-      <input className="input" type="text" value={state.actualValue} readOnly={true} /><br />
-      <div className="div-buttons">
-        <button
-          className="buttons"
+  <Maintainer>
+      <Input className="input" type="text" value={state.actualValue} readOnly={true} /><br />
+      <Divbuttons>
+        <Buttons
           onMouseDown={
             e => numberWala(e)
           }
@@ -87,8 +87,8 @@ function App() {
             }
           }
           value=",.!1"
-        >, . ! 1</button>
-        <button className="buttons"
+        >, . ! 1</Buttons>
+        <Buttons
           onMouseDown={
             e => numberWala(e)
           }
@@ -97,8 +97,8 @@ function App() {
               setCounter(counter + 1);
               alphaWala(e, counter, false);
             }
-          } value="abc2">abc 2</button>
-        <button className="buttons"
+          } value="abc2">abc 2</Buttons>
+        <Buttons
           onMouseDown={
             e => numberWala(e)
           }
@@ -107,8 +107,8 @@ function App() {
               setCounter(counter + 1);
               alphaWala(e, counter, false);
             }
-          } value="def3">def 3</button>
-        <button className="buttons"
+          } value="def3">def 3</Buttons>
+        <Buttons
           onMouseDown={
             e => numberWala(e)
           }
@@ -117,8 +117,8 @@ function App() {
               setCounter(counter + 1);
               alphaWala(e, counter, false);
             }
-          } value="ghi4">ghi 4</button>
-        <button className="buttons"
+          } value="ghi4">ghi 4</Buttons>
+        <Buttons
           onMouseDown={
             e => numberWala(e)
           }
@@ -127,8 +127,8 @@ function App() {
               setCounter(counter + 1);
               alphaWala(e, counter, false);
             }
-          } value="jkl5">jkl 5</button>
-        <button className="buttons"
+          } value="jkl5">jkl 5</Buttons>
+        <Buttons
           onMouseDown={
             e => numberWala(e)
           }
@@ -137,8 +137,8 @@ function App() {
               setCounter(counter + 1);
               alphaWala(e, counter, false);
             }
-          } value="mno6">mno 6</button>
-        <button className="buttons"
+          } value="mno6">mno 6</Buttons>
+        <Buttons
           onMouseDown={
             e => numberWala(e)
           }
@@ -147,8 +147,8 @@ function App() {
               setCounter(counter + 1);
               alphaWala(e, counter, true);
             }
-          } value="pqrs7">pqrs 7</button>
-        <button className="buttons"
+          } value="pqrs7">pqrs 7</Buttons>
+        <Buttons
           onMouseDown={
             e => numberWala(e)
           }
@@ -157,8 +157,8 @@ function App() {
               setCounter(counter + 1);
               alphaWala(e, counter);
             }
-          } value="tuv8">tuv 8</button>
-        <button className="buttons"
+          } value="tuv8">tuv 8</Buttons>
+        <Buttons
           onMouseDown={
             e => numberWala(e)
           }
@@ -167,8 +167,8 @@ function App() {
               setCounter(counter + 1);
               alphaWala(e, counter, true);
             }
-          } value="wxyz9">wxyz 9</button>
-        <button className="buttons"
+          } value="wxyz9">wxyz 9</Buttons>
+        <Buttons className="buttons"
           onMouseDown={
             e => numberWala(e)
           }
@@ -177,8 +177,8 @@ function App() {
               setCounter(counter + 1);
               alphaWala(e, counter, false, true);
             }
-          } value="*">*</button>
-        <button className="buttons"
+          } value="*">*</Buttons>
+        <Buttons
           onMouseDown={
             e => numberWala(e)
           }
@@ -187,8 +187,8 @@ function App() {
               setCounter(counter + 1);
               alphaWala(e, counter, false, true);
             }
-          } value="0">0</button>
-        <button className="buttons"
+          } value="0">0</Buttons>
+        <Buttons
           onMouseDown={
             e => numberWala(e)
           }
@@ -197,9 +197,9 @@ function App() {
               setCounter(counter + 1);
               alphaWala(e, counter, false, true);
             }
-          } value="#">#</button>
-      </div>
-    </div>
+          } value="#">#</Buttons>
+      </Divbuttons>
+    </Maintainer>
   );
 }
 
